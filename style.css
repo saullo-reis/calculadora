@@ -18,6 +18,7 @@ h2{
     height: 50px;
     margin: 20px 0 20px 0;
     border-radius: 10px;
+    padding:10px 0 10px 0
 }
 
 .box{
@@ -38,6 +39,7 @@ button{
     margin: 8px;
     color: hsl(221, 14%, 31%);
     font-family: "League Spartan", sans-serif;
+    cursor: pointer;
 }
 
 .numbers button{
@@ -47,11 +49,18 @@ button{
     height: 35px;
 }
 
+.numbers button:hover{
+    background-color: hsl(10, 10%, 100%);
+}
+
 .numbers .del{
     background-color: hsl(225, 21%, 49%);
     box-shadow: 0 3px hsl(224, 28%, 35%);
     color:white;
     font-size: 15px;
+}
+.numbers .del:hover{
+    background-color: hsl(225, 21%, 60%);
 }
 
 .letters button{
@@ -64,8 +73,14 @@ button{
     color: white;
 }
 
+.letters .reset:hover{
+    background-color: hsl(225, 21%, 60%);
+}
 .letters .igual{
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0 3px hsl(6, 70%, 34%);
     color: white;
+}
+.letters .igual:hover{
+    background-color: hsl(6, 63%, 60%);
 }
