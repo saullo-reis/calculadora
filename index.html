@@ -22,36 +22,36 @@
     <div class="container">
       <h2>calc</h2>
       <div class="box-response">
-        <h1></h1>
+        <h1  id="response"></h1>
       </div>
       <div class="box">
         <div class="numbers">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="del">DEL</button>
+          <button onclick="adicionar7()">7</button>
+          <button onclick="adicionar8()">8</button>
+          <button onclick="adicionar9()">9</button>
+          <button class="del" onclick="adicionar7()">DEL</button>
         </div>
         <div class="numbers">
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>+</button>
+          <button onclick="adicionar4()">4</button>
+          <button onclick="adicionar5()">5</button>
+          <button onclick="adicionar6()">6</button>
+          <button onclick="mais()">+</button>
         </div>
         <div class="numbers"> 
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
+          <button onclick="adicionar1()">1</button>
+          <button onclick="adicionar2()">2</button>
+          <button onclick="adicionar3()">3</button>
+          <button onclick="menos()">-</button>
         </div>
         <div class="numbers">
-          <button>.</button>
-          <button>0</button>
-          <button>/</button>
-          <button>x</button>
+          <button onclick="adicionarPonto()">.</button>
+          <button onclick="adicionar0()">0</button>
+          <button onclick="divisao()">/</button>
+          <button onclick="multiplicacao()">x</button>
         </div>
         <div class="letters">
           <button class="reset">RESET</button>
-          <button class="igual">=</button>
+          <button class="igual" onclick="result()">=</button>
         </div>
       </div>
     </div>
@@ -60,5 +60,7 @@
       Coded by <a href="#">Saullo Reis</a>.
     </div>
   </section>
+  <script type="text/javascript" src="/javascript/index.js"></script>
+  <script type="text/javascript" src="/javascript/teclas.js"></script>
 </body>
 </html>
