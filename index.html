@@ -22,35 +22,38 @@
     <div class="container">
       <h2>calc</h2>
       <div class="box-response">
-        <h1  id="response"></h1>
+        <input type="text" id="response"></input>
+      </div>
+      <div>
+        <h1 id='result'></h1>
       </div>
       <div class="box">
         <div class="numbers">
-          <button onclick="adicionar7()">7</button>
-          <button onclick="adicionar8()">8</button>
-          <button onclick="adicionar9()">9</button>
-          <button class="del" onclick="adicionar7()">DEL</button>
+          <button onclick="insert('7')">7</button>
+          <button onclick="insert('8')">8</button>
+          <button onclick="insert('9')">9</button>
+          <button class="del" onclick="del()">DEL</button>
         </div>
         <div class="numbers">
-          <button onclick="adicionar4()">4</button>
-          <button onclick="adicionar5()">5</button>
-          <button onclick="adicionar6()">6</button>
-          <button onclick="mais()">+</button>
+          <button onclick="insert('4')">4</button>
+          <button onclick="insert('5')">5</button>
+          <button onclick="insert('6')">6</button>
+          <button onclick="insertSimbol('+')">+</button>
         </div>
         <div class="numbers"> 
-          <button onclick="adicionar1()">1</button>
-          <button onclick="adicionar2()">2</button>
-          <button onclick="adicionar3()">3</button>
-          <button onclick="menos()">-</button>
+          <button onclick="insert('1')">1</button>
+          <button onclick="insert('2')">2</button>
+          <button onclick="insert('3')">3</button>
+          <button onclick="insertSimbol('-')">-</button>
         </div>
         <div class="numbers">
-          <button onclick="adicionarPonto()">.</button>
-          <button onclick="adicionar0()">0</button>
-          <button onclick="divisao()">/</button>
-          <button onclick="multiplicacao()">x</button>
+          <button onclick="insert('.')">.</button>
+          <button onclick="insert('0')">0</button>
+          <button onclick="insertSimbol('/')">/</button>
+          <button onclick="insertSimbol('*')">x</button>
         </div>
         <div class="letters">
-          <button class="reset">RESET</button>
+          <button class="reset"onclick="reset()">RESET</button>
           <button class="igual" onclick="result()">=</button>
         </div>
       </div>
